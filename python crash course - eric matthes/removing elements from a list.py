@@ -7,6 +7,8 @@ print(f"Welcome {guests[1].title()}!")
 print(f"Welcome {guests[2].title()}!")
 print(f"Welcome {guests[3].title()}!")
 
+print(len(guests))
+
 # TIY 3.5: Changing Guest List
 
 absent = guests.pop(2)
@@ -19,6 +21,8 @@ print(f"\n{absent.title()} can't make it today :< but {came.title()} came, so...
 
 print(f"\nUpdated list of guests:\n{guests[0].title()}\n{guests[1].title()}\n{guests[2].title()}\n{guests[3].title()}")
 
+print(len(guests))
+
 # TIY 3.6 More Guests
 
 print(f"\nNew tables are coming, so we're expecting more guests....")
@@ -30,6 +34,8 @@ guests.append("johanan")
 print(f"\nWelcome to the new people {guests[0].title()}, {guests[3].title()}, and {guests[6].title()}.")
 
 print(f"\nHere are the updated list of guests: \n{guests[0].title()}\n{guests[1].title()}\n{guests[2].title()}\n{guests[3].title()}\n{guests[4].title()}\n{guests[5].title()}\n{guests[6].title()}")
+
+print(len(guests))
 
 # TIY 3.7 Shrinking Guest List:
 
@@ -47,10 +53,14 @@ print(f"\nbut here is the list of the people who are still invited: \n{guests[0]
 
 print(f"\nSome people are unable to came and are going to be removed in the guest list.")
 
+print(len(guests))
+
 del guests[4]
 
 print(f"\n Updated List: \n{guests}")
+print(len(guests))
 
 del guests[3]
 
 print(f"\n Updated List: \n{guests}")
+print(len(guests))
